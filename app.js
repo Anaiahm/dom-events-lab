@@ -60,13 +60,13 @@ buttons.forEach((button) => {
         operator = value;
       }
     } else if (value === '.') {
-      // Handle decimal points
+     
       if (!currentInput.includes('.')) {
         currentInput += value;
         display.innerText = currentInput;
       }
     } else {
-      // Handle numbers
+     
       if (currentInput === '0' && value !== '.') {
         currentInput = value;  
       } else {
